@@ -49,7 +49,7 @@ export const Footer = () => (
         <GridItem colSpan={[12, 6, 4, 3]}>
           <Stack gap={4}>
             <Box mb={4}>
-              <Symbol color="white" />
+              <Symbol />
             </Box>
             <Text size="xs">
               A retired project by{" "}
