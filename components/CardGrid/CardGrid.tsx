@@ -9,7 +9,7 @@ type CardGridProps = {
 };
 
 export const CardGrid: FC<CardGridProps> = ({ mt, bg }) => (
-  <Box mt={mt} bg={bg}>
+  <Box mt={mt} mb={8} bg={bg}>
     <Container>
       <Grid columns={12}>
         {data.products?.map((item, index) => {
