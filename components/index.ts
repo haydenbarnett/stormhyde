@@ -15,7 +15,7 @@ export * from "./Card/Card";
 export * from "./Symbol/Symbol";
 export * from "./Logo/Logo";
 export * from "./DownloadButton/DownloadButton";
-// Gallery
+export * from "./ProductImage/ProductImage";
 
 // Content Blocks
 export * from "./CardGrid/CardGrid";

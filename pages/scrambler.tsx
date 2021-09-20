@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import {
   CardGrid,
   Banner,
@@ -9,6 +8,7 @@ import {
   DownloadButton,
   Flex,
   Text,
+  ProductImage,
 } from "@components";
 import type { NextPage } from "next";
 
@@ -51,15 +51,7 @@ const Scrambler: NextPage = () => {
             </Box>
           </Box>
           <Box mt={[null, null, "-200px"]} mb="80px">
-            <Box borderRadius="8px" overflow="hidden" lineHeight="0">
-              <Image
-                src="/products/scrambler/scrambler-2.png"
-                width="700"
-                height="700"
-                alt=""
-                layout="responsive"
-              />
-            </Box>
+            <ProductImage src="/products/scrambler/scrambler-2.png" />
           </Box>
         </Grid>
       </Container>

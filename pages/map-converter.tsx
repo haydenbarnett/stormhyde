@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+
 import {
   CardGrid,
   Banner,
@@ -9,6 +9,7 @@ import {
   Container,
   DownloadButton,
   Text,
+  ProductImage,
 } from "@components";
 import type { NextPage } from "next";
 
@@ -53,15 +54,7 @@ const MapConverter: NextPage = () => {
             </Box>
           </Box>
           <Box mt={[null, null, "-200px"]} mb="80px">
-            <Box borderRadius="8px" overflow="hidden" lineHeight="0">
-              <Image
-                src="/products/map-converter/map-converter-2.png"
-                width="700"
-                height="700"
-                alt=""
-                layout="responsive"
-              />
-            </Box>
+            <ProductImage src="/products/map-converter/map-converter-2.png" />
           </Box>
         </Grid>
       </Container>

@@ -28,7 +28,7 @@ export const Banner: FC<BannerProps> = ({
     center: undefined,
   };
   return (
-    <Flex alignItems="center" bg="blue" py={24} minHeight="320px">
+    <Flex alignItems="center" bg="blue" py={12} minHeight="320px">
       <Container>
         <Flex
           justifyContent={justifyContent[layout] as CSS.Property.JustifyContent}

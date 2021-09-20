@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import {
   CardGrid,
   Banner,
@@ -12,6 +11,8 @@ import {
   Text,
   TextLink,
   List,
+  Stack,
+  ProductImage,
 } from "@components";
 import type { NextPage } from "next";
 
@@ -121,24 +122,10 @@ const BatchScriptGenerator: NextPage = () => {
             </Box>
           </Box>
           <Box mt={[null, null, "-200px"]} mb="80px">
-            <Box borderRadius="8px" overflow="hidden" lineHeight="0">
-              <Image
-                src="/products/batch-script-generator/batch-script-generator-2.png"
-                width="700"
-                height="700"
-                alt=""
-                layout="responsive"
-              />
-            </Box>
-            <Box borderRadius="8px" overflow="hidden" lineHeight="0" mt="80px">
-              <Image
-                src="/products/batch-script-generator/batch-script-generator-4.png"
-                width="700"
-                height="700"
-                alt=""
-                layout="responsive"
-              />
-            </Box>
+            <Stack gap={10}>
+              <ProductImage src="/products/batch-script-generator/batch-script-generator-2.png" />
+              <ProductImage src="/products/batch-script-generator/batch-script-generator-4.png" />
+            </Stack>
           </Box>
         </Grid>
       </Container>
