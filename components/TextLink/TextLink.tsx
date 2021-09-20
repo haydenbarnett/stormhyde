@@ -45,5 +45,6 @@ export const TextLink = forwardRef<HTMLAnchorElement, TextLinkProps>(
     );
   }
 );
+TextLink.displayName = "TextLink";
 
 export default TextLink;

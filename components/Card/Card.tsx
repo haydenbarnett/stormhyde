@@ -49,7 +49,7 @@ export const Card: FC<CardProps> = ({
   <NextLink href={url} passHref>
     <BaseCard as="a">
       <Box position="relative" height="185px" bg="grey.600">
-        <Image src={thumbnail} layout="fill" objectFit="cover" />
+        <Image src={thumbnail} layout="fill" objectFit="cover" alt="" />
       </Box>
       <Box p="20px 30px">
         <Stack gap={4}>

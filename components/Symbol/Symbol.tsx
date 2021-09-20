@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
+import Image from "next/image";
 
 const spin = keyframes`
   from, 60% {
@@ -24,7 +25,7 @@ type SymbolProps = {
 export const Symbol: FC<SymbolProps> = ({ color = "blue" }) => {
   return (
     <Animation>
-      <img
+      <Image
         src={`/symbol-${color}.svg`}
         width="30"
         height="30"

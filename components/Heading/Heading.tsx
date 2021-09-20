@@ -62,5 +62,6 @@ export const Heading = forwardRef<HTMLParagraphElement, HeadingProps>(
     );
   }
 );
+Heading.displayName = "Heading";
 
 export default Heading;

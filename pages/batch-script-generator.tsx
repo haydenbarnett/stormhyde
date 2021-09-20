@@ -51,11 +51,11 @@ const BatchScriptGenerator: NextPage = () => {
               <List>
                 <li>
                   Load your .ma or .mb file and enter render data then press
-                  'Add Render Line'
+                  &apos;Add Render Line&apos;
                 </li>
                 <li>
-                  Once finished the batch script can be generated with 'Create
-                  Batch Script'
+                  Once finished the batch script can be generated with
+                  &apos;Create Batch Script&apos;
                 </li>
                 <li>
                   Any fields not specified simply are not included in the
