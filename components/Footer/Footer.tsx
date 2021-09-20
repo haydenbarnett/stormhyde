@@ -11,7 +11,7 @@ import {
 } from "../";
 
 export const Footer = () => (
-  <Box bg="grey.600" color="grey.400" py={15}>
+  <Box bg="grey.700" color="grey.400" py={15}>
     <Container>
       <Grid columns={12}>
         <GridItem colSpan={[12, 6, 8, 9]}>
