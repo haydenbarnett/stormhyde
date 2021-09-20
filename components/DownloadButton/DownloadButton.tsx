@@ -20,12 +20,20 @@ const BaseDownloadButton = styled(Box, { shouldForwardProp })`
   padding: 16px 40px;
   margin: 0 20px;
   box-shadow: 0 3px 8px 0 rgb(0, 0, 0, 0.1);
-  color: ${(props) => props.theme.colors.black};
+  color: ${(props) => props.theme.colors.grey[600]};
   transition: 0.3s ease;
+
+  .label {
+    transition: 0.3s ease;
+  }
 
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 10px 0 rgb(0, 0, 0, 0.1);
+
+    .label {
+      color: ${(props) => props.theme.colors.blue};
+    }
   }
 `;
 
@@ -38,7 +46,7 @@ export const DownloadButton: FC<DownloadButtonProps> = ({
     <BaseDownloadButton as="a">
       <Stack gap={0} as="span">
         {label && (
-          <Text as="span" size="md">
+          <Text as="span" size="md" fontWeight="medium" className="label">
             {label}
           </Text>
         )}
