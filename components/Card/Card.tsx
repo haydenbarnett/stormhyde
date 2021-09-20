@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import Image from "next/image";
 import NextLink from "next/link";
 import styled from "@emotion/styled";
@@ -39,29 +39,54 @@ const BaseCard = styled(Box, { shouldForwardProp })`
   }
 `;
 
+type FadeProps = {
+  opacity?: number;
+};
+
+const Fade = styled.div<FadeProps>`
+  opacity: ${(props) => props.opacity};
+  transition: 0.8s ease;
+`;
+
 export const Card: FC<CardProps> = ({
   url,
   title,
   description,
   category,
   thumbnail,
-}) => (
-  <NextLink href={url} passHref>
-    <BaseCard as="a">
-      <Box position="relative" height="185px" bg="grey.600">
-        <Image src={thumbnail} layout="fill" objectFit="cover" alt="" />
-      </Box>
-      <Box p="20px 30px">
-        <Stack gap={4}>
-          <Heading>{title}</Heading>
-          <Text color="grey.500">{description}</Text>
-          <Text size="xs" opacity={0.5}>
-            {category}
-          </Text>
-        </Stack>
-      </Box>
-    </BaseCard>
-  </NextLink>
-);
+}) => {
+  const [isLoaded, setIsLoaded] = useState(false);
+  return (
+    <NextLink href={url} passHref>
+      <BaseCard as="a">
+        <Box position="relative" height="185px" bg="grey.600">
+          <Fade opacity={isLoaded ? 1 : 0}>
+            <Image
+              src={thumbnail}
+              layout="fill"
+              objectFit="cover"
+              alt=""
+              onLoad={(e) => {
+                const target = e.target as HTMLImageElement;
+                if (target.src.indexOf("data:image/gif;base64") < 0) {
+                  setIsLoaded(true);
+                }
+              }}
+            />
+          </Fade>
+        </Box>
+        <Box p="20px 30px">
+          <Stack gap={4}>
+            <Heading>{title}</Heading>
+            <Text color="grey.500">{description}</Text>
+            <Text size="xs" opacity={0.5}>
+              {category}
+            </Text>
+          </Stack>
+        </Box>
+      </BaseCard>
+    </NextLink>
+  );
+};
 
 export default Card;

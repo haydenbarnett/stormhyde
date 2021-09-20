@@ -15,13 +15,13 @@ const shimmer = keyframes`
 `;
 
 const Animation = styled.div`
-  background: ${(props) => props.theme.colors.grey[200]};
+  background: ${(props) => props.theme.colors.grey[700]};
   background-image: linear-gradient(
     to right,
-    ${(props) => props.theme.colors.grey[200]} 0%,
-    ${(props) => props.theme.colors.grey[100]} 30%,
-    ${(props) => props.theme.colors.grey[200]} 60%,
-    ${(props) => props.theme.colors.grey[200]} 100%
+    ${(props) => props.theme.colors.grey[700]} 0%,
+    ${(props) => props.theme.colors.grey[600]} 30%,
+    ${(props) => props.theme.colors.grey[700]} 60%,
+    ${(props) => props.theme.colors.grey[700]} 100%
   );
   background-repeat: no-repeat;
   background-size: 700px;
