@@ -10,7 +10,9 @@ type DownloadButtonProps = {
   category?: string;
 };
 
-const BaseDownloadButton = styled(Box, { shouldForwardProp })`
+const BaseDownloadButton = styled(Box, { shouldForwardProp })<
+  React.HTMLProps<HTMLButtonElement>
+>`
   cursor: pointer;
   text-decoration: none;
   text-align: center;
@@ -43,7 +45,7 @@ export const DownloadButton: FC<DownloadButtonProps> = ({
   category,
 }) => (
   <NextLink href={href} passHref>
-    <BaseDownloadButton as="a">
+    <BaseDownloadButton as="a" target="_blank">
       <Stack gap={0} as="span">
         {label && (
           <Text as="span" size="md" fontWeight="medium" className="label">
