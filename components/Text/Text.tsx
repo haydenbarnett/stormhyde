@@ -5,10 +5,12 @@ import {
   display,
   space,
   color,
+  typography,
   variant,
   DisplayProps,
   SpaceProps,
   ColorProps,
+  TypographyProps,
   ResponsiveValue,
 } from "styled-system";
 import shouldForwardProp from "@styled-system/should-forward-prop";
@@ -18,6 +20,7 @@ type TextSize = "xs" | "sm" | "md" | "lg" | "xl";
 type TextProps = DisplayProps &
   SpaceProps &
   ColorProps &
+  TypographyProps &
   React.ComponentPropsWithoutRef<"p"> & {
     as?: React.ElementType;
     size?: ResponsiveValue<TextSize>;
@@ -34,32 +37,32 @@ const BaseText = styled("p", { shouldForwardProp })<TextProps>(
     variants: {
       xl: {
         fontSize: "xl",
-        lineHeight: "xl",
+        lineHeight: "loose",
         fontWeight: "normal",
       },
       lg: {
         fontSize: "lg",
-        lineHeight: "lg",
+        lineHeight: "relaxed",
         fontWeight: "normal",
       },
       md: {
         fontSize: "md",
-        lineHeight: "md",
+        lineHeight: "normal",
         fontWeight: "normal",
       },
       sm: {
         fontSize: "sm",
-        lineHeight: "sm",
+        lineHeight: "normal",
         fontWeight: "normal",
       },
       xs: {
         fontSize: "xs",
-        lineHeight: "xs",
+        lineHeight: "normal",
         fontWeight: "normal",
       },
     },
   }),
-  compose(space, display, color)
+  compose(space, display, color, typography)
 );
 
 export const Text = forwardRef<HTMLParagraphElement, TextProps>(

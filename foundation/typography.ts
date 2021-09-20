@@ -11,11 +11,12 @@ const fontSizes = {
 };
 
 const lineHeights = {
-  xs: "1.4em",
-  sm: "1.6em",
-  md: "2em",
-  lg: "1.15em",
-  xl: "1.1em",
+  none: 1,
+  tight: 1.25,
+  snug: 1.375,
+  normal: 1.5,
+  relaxed: 1.625,
+  loose: 2,
 };
 
 const fontWeights = {

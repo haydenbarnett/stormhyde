@@ -44,27 +44,27 @@ const BaseList = styled("ul", { shouldForwardProp })<ListProps>(
     variants: {
       xl: {
         fontSize: "xl",
-        lineHeight: "xl",
+        lineHeight: "loose",
         fontWeight: "normal",
       },
       lg: {
         fontSize: "lg",
-        lineHeight: "lg",
+        lineHeight: "relaxed",
         fontWeight: "normal",
       },
       md: {
         fontSize: "md",
-        lineHeight: "md",
+        lineHeight: "normal",
         fontWeight: "normal",
       },
       sm: {
         fontSize: "sm",
-        lineHeight: "sm",
+        lineHeight: "normal",
         fontWeight: "normal",
       },
       xs: {
         fontSize: "xs",
-        lineHeight: "xs",
+        lineHeight: "normal",
         fontWeight: "normal",
       },
     },

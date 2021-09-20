@@ -34,17 +34,17 @@ const BaseHeading = styled("h2", { shouldForwardProp })<HeadingProps>(
     variants: {
       h1: {
         fontSize: "xl",
-        lineHeight: "xl",
+        lineHeight: "tight",
         fontWeight: "medium",
       },
       h2: {
         fontSize: "lg",
-        lineHeight: "lg",
+        lineHeight: "tight",
         fontWeight: "medium",
       },
       h3: {
         fontSize: "md",
-        lineHeight: "md",
+        lineHeight: "tight",
         fontWeight: "normal",
       },
     },
