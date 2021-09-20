@@ -27,7 +27,7 @@ type TextProps = DisplayProps &
 const BaseText = styled("p", { shouldForwardProp })<TextProps>(
   {
     marginTop: "0",
-    marginBottom: "1em",
+    marginBottom: "0.5em",
   },
   variant({
     prop: "size",

@@ -34,7 +34,7 @@ export const Banner: FC<BannerProps> = ({
           justifyContent={justifyContent[layout] as CSS.Property.JustifyContent}
           textAlign={textAlign[layout] as CSS.Property.TextAlign}
         >
-          <Stack gap={4} width={width[layout]}>
+          <Stack gap={3} width={width[layout]}>
             {category && (
               <Text size="xs" color="white" opacity={0.5}>
                 {category}
@@ -46,9 +46,9 @@ export const Banner: FC<BannerProps> = ({
               </Heading>
             )}
             {description && (
-              <Heading size="h2" color="white" opacity={0.8}>
+              <Text size="lg" color="white" opacity={0.8}>
                 {description}
-              </Heading>
+              </Text>
             )}
           </Stack>
         </Flex>

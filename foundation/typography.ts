@@ -1,5 +1,5 @@
 const fontFamily = {
-  body: "Roboto, Helvetica Neue, Helvetica, Arial, sans-serif",
+  body: "'Inter', Helvetica Neue, Helvetica, Arial, sans-serif",
 };
 
 const fontSizes = {
@@ -20,6 +20,7 @@ const lineHeights = {
 
 const fontWeights = {
   normal: "400",
+  medium: "500",
   semibold: "600",
   bold: "700",
 };

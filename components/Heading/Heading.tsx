@@ -27,7 +27,7 @@ type HeadingProps = DisplayProps &
 const BaseHeading = styled("h2", { shouldForwardProp })<HeadingProps>(
   {
     marginTop: "0",
-    marginBottom: "1em",
+    marginBottom: "0.5em",
   },
   variant({
     prop: "size",
@@ -35,12 +35,12 @@ const BaseHeading = styled("h2", { shouldForwardProp })<HeadingProps>(
       h1: {
         fontSize: "xl",
         lineHeight: "xl",
-        fontWeight: "normal",
+        fontWeight: "medium",
       },
       h2: {
         fontSize: "lg",
         lineHeight: "lg",
-        fontWeight: "normal",
+        fontWeight: "medium",
       },
       h3: {
         fontSize: "md",
