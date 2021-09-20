@@ -24,7 +24,7 @@ export const Banner: FC<BannerProps> = ({
     center: "center",
   };
   const width = {
-    left: [null, "50%"],
+    left: [null, null, "50%"],
     center: undefined,
   };
   return (

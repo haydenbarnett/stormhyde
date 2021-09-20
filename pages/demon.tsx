@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import {
   CardGrid,
   Banner,
@@ -31,18 +32,13 @@ const Demon: NextPage = () => {
         layout="left"
       />
       <Container>
-        <Grid columns={[1, 2]}>
+        <Grid columns={[1, null, 2]}>
           <Box>
             <Flex justifyContent="center" mt="-30px">
               <DownloadButton
-                href="/downloads/Scrambler-v1.1.zip"
+                href="/downloads/demonRigged-v1.0.zip"
                 label="Download"
                 category="Windows file"
-              />
-              <DownloadButton
-                href="/downloads/Scrambler-v1.1-app.zip"
-                label="Download"
-                category="Mac app"
               />
             </Flex>
             <Box py={12}>
@@ -62,7 +58,17 @@ const Demon: NextPage = () => {
                 </TextLink>
                 .
               </Text>
-              <Text>Free for personal &amp; commercial use.</Text>
+            </Box>
+          </Box>
+          <Box mt={[null, null, "-200px"]} mb="80px">
+            <Box borderRadius="8px" overflow="hidden" lineHeight="0">
+              <Image
+                src="/products/demon/demon-1.jpg"
+                width="700"
+                height="700"
+                alt=""
+                layout="responsive"
+              />
             </Box>
           </Box>
         </Grid>

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import {
   CardGrid,
   Banner,
@@ -28,7 +29,7 @@ const Scrambler: NextPage = () => {
         layout="left"
       />
       <Container>
-        <Grid columns={[1, 2]}>
+        <Grid columns={[1, null, 2]}>
           <Box>
             <Flex justifyContent="center" mt="-30px">
               <DownloadButton
@@ -47,6 +48,17 @@ const Scrambler: NextPage = () => {
                 A simple application that takes two words and scrambles them
                 together to make new words for idea generation and naming.
               </Text>
+            </Box>
+          </Box>
+          <Box mt={[null, null, "-200px"]} mb="80px">
+            <Box borderRadius="8px" overflow="hidden" lineHeight="0">
+              <Image
+                src="/products/scrambler/scrambler-2.png"
+                width="700"
+                height="700"
+                alt=""
+                layout="responsive"
+              />
             </Box>
           </Box>
         </Grid>

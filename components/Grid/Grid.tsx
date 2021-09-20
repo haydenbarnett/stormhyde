@@ -11,8 +11,8 @@ type GridProps = BoxProps & {
 export const Grid = styled(Box, { shouldForwardProp })<GridProps>(
   {
     display: "grid",
-    rowGap: "16px",
-    columnGap: "16px",
+    rowGap: "24px",
+    columnGap: "24px",
   },
   system({
     columns: {

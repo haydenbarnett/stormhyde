@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import {
   CardGrid,
   Banner,
@@ -31,7 +32,7 @@ const BatchScriptGenerator: NextPage = () => {
         layout="left"
       />
       <Container>
-        <Grid columns={[1, 2]}>
+        <Grid columns={[1, null, 2]}>
           <Box>
             <Flex justifyContent="center" mt="-30px">
               <DownloadButton
@@ -117,6 +118,26 @@ const BatchScriptGenerator: NextPage = () => {
                   creativecrash.com
                 </TextLink>
               </Text>
+            </Box>
+          </Box>
+          <Box mt={[null, null, "-200px"]} mb="80px">
+            <Box borderRadius="8px" overflow="hidden" lineHeight="0">
+              <Image
+                src="/products/batch-script-generator/batch-script-generator-2.png"
+                width="700"
+                height="700"
+                alt=""
+                layout="responsive"
+              />
+            </Box>
+            <Box borderRadius="8px" overflow="hidden" lineHeight="0" mt="80px">
+              <Image
+                src="/products/batch-script-generator/batch-script-generator-4.png"
+                width="700"
+                height="700"
+                alt=""
+                layout="responsive"
+              />
             </Box>
           </Box>
         </Grid>

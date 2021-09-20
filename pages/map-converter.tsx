@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import {
   CardGrid,
   Banner,
@@ -28,7 +29,7 @@ const MapConverter: NextPage = () => {
         layout="left"
       />
       <Container>
-        <Grid columns={[1, 2]}>
+        <Grid columns={[1, null, 2]}>
           <Box>
             <Flex justifyContent="center" mt="-30px">
               <DownloadButton
@@ -49,6 +50,17 @@ const MapConverter: NextPage = () => {
               <Text>
                 This works using the Autodesk Maya executable imf_copy.exe
               </Text>
+            </Box>
+          </Box>
+          <Box mt={[null, null, "-200px"]} mb="80px">
+            <Box borderRadius="8px" overflow="hidden" lineHeight="0">
+              <Image
+                src="/products/map-converter/map-converter-2.png"
+                width="700"
+                height="700"
+                alt=""
+                layout="responsive"
+              />
             </Box>
           </Box>
         </Grid>
