@@ -51,12 +51,12 @@ export const Footer = () => (
             <Box mb={4}>
               <Symbol color="white" />
             </Box>
-            <Text size="xs">A retired project by Hayden Barnett.</Text>
             <Text size="xs">
-              See what Hayden has been up to recently on{" "}
+              A retired project by{" "}
               <TextLink color="blue" href="https://haydenbarnett.com">
-                haydenbarnett.com
+                Hayden Barnett
               </TextLink>
+              .
             </Text>
             <Text size="xs">&copy; {new Date().getFullYear()}</Text>
           </Stack>
