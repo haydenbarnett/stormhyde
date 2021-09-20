@@ -2,26 +2,28 @@ import { Container, Logo } from "../";
 import NextLink from "next/link";
 import styled from "@emotion/styled";
 
-const StyledHeader = styled.header`
+const HeaderWrapper = styled.header`
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  img {
-    margin: 26px 0;
-  }
+`;
+
+const LogoWrapper = styled.a`
+  display: inline-flex;
+  margin: 26px 0;
 `;
 
 export const Header = () => (
-  <StyledHeader>
+  <HeaderWrapper>
     <Container>
       <NextLink href="/" passHref>
-        <a>
+        <LogoWrapper>
           <Logo color="white" />
-        </a>
+        </LogoWrapper>
       </NextLink>
     </Container>
-  </StyledHeader>
+  </HeaderWrapper>
 );
 
 export default Header;
