@@ -1,8 +1,7 @@
 import { FC, useState } from "react";
 import Image from "next/image";
-import NextLink from "next/link";
 import styled from "@emotion/styled";
-import { Box, Heading, Text, Stack } from "../";
+import { Box, Heading, Text, Stack, Link } from "../";
 import shouldForwardProp from "@styled-system/should-forward-prop";
 
 type CardProps = {
@@ -59,7 +58,7 @@ export const Card: FC<CardProps> = ({
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   return (
-    <NextLink href={url} passHref>
+    <Link href={url} passHref>
       <BaseCard as="a">
         <Box position="relative" height="185px" bg="grey.600">
           <Fade opacity={isLoaded ? 1 : 0}>
@@ -87,7 +86,7 @@ export const Card: FC<CardProps> = ({
           </Stack>
         </Box>
       </BaseCard>
-    </NextLink>
+    </Link>
   );
 };
 

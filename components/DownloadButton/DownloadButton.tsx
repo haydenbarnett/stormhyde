@@ -1,7 +1,6 @@
 import { FC } from "react";
-import NextLink from "next/link";
 import styled from "@emotion/styled";
-import { Box, Heading, Text, Stack } from "../";
+import { Box, Text, Stack, Link } from "../";
 import shouldForwardProp from "@styled-system/should-forward-prop";
 
 type DownloadButtonProps = {
@@ -44,7 +43,7 @@ export const DownloadButton: FC<DownloadButtonProps> = ({
   label,
   category,
 }) => (
-  <NextLink href={href} passHref>
+  <Link href={href} passHref>
     <BaseDownloadButton as="a" target="_blank">
       <Stack gap={0} as="span">
         {label && (
@@ -59,7 +58,7 @@ export const DownloadButton: FC<DownloadButtonProps> = ({
         )}
       </Stack>
     </BaseDownloadButton>
-  </NextLink>
+  </Link>
 );
 
 export default DownloadButton;

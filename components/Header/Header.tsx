@@ -1,5 +1,4 @@
-import { Container, Logo } from "../";
-import NextLink from "next/link";
+import { Container, Logo, Link } from "../";
 import styled from "@emotion/styled";
 
 const HeaderWrapper = styled.header`
@@ -8,6 +7,7 @@ const HeaderWrapper = styled.header`
   left: 0;
   right: 0;
   z-index: 10;
+  background: ${(props) => props.theme.colors.blue};
 `;
 
 const LogoWrapper = styled.a`
@@ -18,11 +18,11 @@ const LogoWrapper = styled.a`
 export const Header = () => (
   <HeaderWrapper>
     <Container>
-      <NextLink href="/" passHref>
+      <Link href="/" passHref>
         <LogoWrapper>
           <Logo color="white" />
         </LogoWrapper>
-      </NextLink>
+      </Link>
     </Container>
   </HeaderWrapper>
 );

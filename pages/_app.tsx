@@ -1,10 +1,11 @@
 import Head from "next/head";
 import type { AppProps } from "next/app";
 import { ThemeProvider } from "@emotion/react";
+import { AnimatePresence } from "framer-motion";
 import theme from "@foundation";
-import { GlobalStyles, Header, Footer } from "@components";
+import { GlobalStyles, TransitionLayout, Header, Footer } from "@components";
 
-function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps, router }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <Head>
@@ -15,9 +16,16 @@ function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <GlobalStyles />
-      <Header />
-      <Component {...pageProps} />
-      <Footer />
+      <AnimatePresence
+        exitBeforeEnter
+        onExitComplete={() => window.scrollTo(0, 0)}
+      >
+        <TransitionLayout key={router.route}>
+          <Header />
+          <Component {...pageProps} />
+          <Footer />
+        </TransitionLayout>
+      </AnimatePresence>
     </ThemeProvider>
   );
 }
