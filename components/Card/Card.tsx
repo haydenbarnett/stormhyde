@@ -63,7 +63,7 @@ export const Card: FC<CardProps> = ({
     <Link href={url} passHref>
       <BaseCard as="a">
         <Box position="relative" height="185px" bg="grey.600">
-          <Fade opacity={isLoaded ? 1 : 0}>
+          <Fade opacity={isLoaded || preload ? 1 : 0}>
             <Image
               src={thumbnail}
               layout="fill"
