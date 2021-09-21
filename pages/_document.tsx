@@ -36,7 +36,7 @@ class MyDocument extends Document {
           <link rel="manifest" href="/site.webmanifest" />
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#039be5" />
           <meta name="msapplication-TileColor" content="#039be5" />
-          <meta name="theme-color" content="#ffffff" />
+          <meta name="theme-color" content="#039be5" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
