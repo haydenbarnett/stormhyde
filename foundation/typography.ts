@@ -30,10 +30,12 @@ const letterSpacings = {
   normal: "0",
 };
 
-export default {
+const typography = {
   fontFamily,
   fontSizes,
   lineHeights,
   fontWeights,
   letterSpacings,
 };
+
+export default typography;

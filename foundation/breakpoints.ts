@@ -7,4 +7,9 @@ const mediaQueries = {
   xl: `@media screen and (min-width: ${breakpoints[3]})`,
 };
 
-export default { breakpoints, mediaQueries };
+const breakpointsQueries = {
+  breakpoints,
+  mediaQueries,
+};
+
+export default breakpointsQueries;
