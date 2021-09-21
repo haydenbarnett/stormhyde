@@ -92,7 +92,9 @@ const BatchScriptGenerator: NextPage = () => {
                 similar to
               </Text>
               <Text>
-                /Applications/Autodesk/maya2015/Maya.app/Contents/bin/Render
+                <code>
+                  /Applications/Autodesk/maya2015/Maya.app/Contents/bin/Render
+                </code>
               </Text>
               <Text>
                 The file you save must also be made executable before it is run.

@@ -60,8 +60,15 @@ export const GlobalStyles = () => {
         code,
         kbd,
         samp {
+          max-width: 100%;
           font-family: monospace, monospace;
           font-size: 1em;
+        }
+
+        code {
+          overflow-x: auto;
+          background: #eee;
+          display: inline-block;
         }
 
         small {
