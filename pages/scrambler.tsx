@@ -50,7 +50,7 @@ const Scrambler: NextPage = () => {
               </Text>
             </Box>
           </Box>
-          <Box mt={[null, null, "-200px"]} mb="80px">
+          <Box mt={[null, null, "-220px"]} mb="80px">
             <ProductImage src="/products/scrambler/scrambler-2.png" />
           </Box>
         </Grid>

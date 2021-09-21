@@ -53,7 +53,7 @@ const MapConverter: NextPage = () => {
               </Text>
             </Box>
           </Box>
-          <Box mt={[null, null, "-200px"]} mb="80px">
+          <Box mt={[null, null, "-220px"]} mb="80px">
             <ProductImage src="/products/map-converter/map-converter-2.png" />
           </Box>
         </Grid>

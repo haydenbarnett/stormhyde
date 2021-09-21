@@ -1,4 +1,4 @@
-import { Container, Logo, Link } from "../";
+import { Container, Flex, Logo, Link } from "../";
 import styled from "@emotion/styled";
 
 const HeaderWrapper = styled.header`
@@ -17,11 +17,13 @@ const LogoWrapper = styled.a`
 export const Header = () => (
   <HeaderWrapper>
     <Container>
-      <Link href="/" passHref>
-        <LogoWrapper>
-          <Logo color="white" />
-        </LogoWrapper>
-      </Link>
+      <Flex justifyContent={["center", "flex-start"]}>
+        <Link href="/" passHref>
+          <LogoWrapper>
+            <Logo color="white" />
+          </LogoWrapper>
+        </Link>
+      </Flex>
     </Container>
   </HeaderWrapper>
 );

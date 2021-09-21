@@ -13,8 +13,8 @@ type BannerProps = {
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  padding: ${(props) => props.theme.space[12]} 0;
-  min-height: 320px;
+  padding: ${(props) => props.theme.space[20]} 0;
+  min-height: 380px;
 
   background-color: ${(props) => props.theme.colors.blue};
   background-image: linear-gradient(

@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       </Head>
       <Banner
         title="Free software &amp; resources"
-        description="Created for animators for use with Autodesk Maya"
+        description="Created for use with Autodesk Maya"
         layout="center"
       />
       <CardGrid mt="-30px" />

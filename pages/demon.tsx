@@ -60,7 +60,7 @@ const Demon: NextPage = () => {
               </Text>
             </Box>
           </Box>
-          <Box mt={[null, null, "-200px"]} mb="80px">
+          <Box mt={[null, null, "-220px"]} mb="80px">
             <ProductImage src="/products/demon/demon-1.jpg" />
           </Box>
         </Grid>

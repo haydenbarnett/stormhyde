@@ -28,6 +28,7 @@ const BaseHeading = styled("h2", { shouldForwardProp })<HeadingProps>(
   {
     marginTop: "0",
     marginBottom: "0.5em",
+    letterSpacing: "-0.01em",
   },
   variant({
     prop: "size",

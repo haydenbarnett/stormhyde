@@ -123,7 +123,7 @@ const BatchScriptGenerator: NextPage = () => {
               </Text>
             </Box>
           </Box>
-          <Box mt={[null, null, "-200px"]} mb="80px">
+          <Box mt={[null, null, "-220px"]} mb="80px">
             <Stack gap={10}>
               <ProductImage src="/products/batch-script-generator/batch-script-generator-2.png" />
               <ProductImage src="/products/batch-script-generator/batch-script-generator-4.png" />
