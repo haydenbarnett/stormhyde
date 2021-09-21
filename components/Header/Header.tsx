@@ -7,7 +7,6 @@ const HeaderWrapper = styled.header`
   left: 0;
   right: 0;
   z-index: 10;
-  background: ${(props) => props.theme.colors.blue};
 `;
 
 const LogoWrapper = styled.a`

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import styled from "@emotion/styled";
 
 type TransitionLayoutProps = {
-  key?: string;
+  route?: string;
   children: React.ReactNode;
 };
 
@@ -28,7 +28,10 @@ const SlideOut = styled(motion.div)`
   z-index: 100;
 `;
 
-export const TransitionLayout = ({ children, key }: TransitionLayoutProps) => {
+export const TransitionLayout = ({
+  children,
+  route,
+}: TransitionLayoutProps) => {
   return (
     <>
       <motion.main
@@ -36,25 +39,25 @@ export const TransitionLayout = ({ children, key }: TransitionLayoutProps) => {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{
-          duration: 0.6,
+          duration: 0.4,
         }}
       >
         {children}
       </motion.main>
       <SlideIn
-        key={key}
+        key={`${route}-in`}
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 0 }}
         exit={{ scaleX: 1 }}
-        transition={{ duration: 0.6, ease: "anticipate" }}
+        transition={{ duration: 0.4, ease: "anticipate" }}
       />
       <SlideOut
-        key={key}
+        key={`${route}-out`}
         className="slide-out"
         initial={{ scaleX: 1 }}
         animate={{ scaleX: 0 }}
         exit={{ scaleX: 0 }}
-        transition={{ duration: 0.6, ease: "anticipate" }}
+        transition={{ duration: 0.4, ease: "anticipate" }}
       />
     </>
   );

@@ -1,4 +1,5 @@
 import { FC } from "react";
+import styled from "@emotion/styled";
 import { Container, Flex, Stack, Heading, Text } from "../";
 import * as CSS from "csstype";
 
@@ -8,6 +9,20 @@ type BannerProps = {
   category?: string;
   layout?: "left" | "center";
 };
+
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  padding: ${(props) => props.theme.space[12]} 0;
+  min-height: 320px;
+
+  background-color: ${(props) => props.theme.colors.blue};
+  background-image: linear-gradient(
+    180deg,
+    ${(props) => props.theme.colors.sky} 0%,
+    ${(props) => props.theme.colors.blue} 100%
+  );
+`;
 
 export const Banner: FC<BannerProps> = ({
   title,
@@ -28,7 +43,7 @@ export const Banner: FC<BannerProps> = ({
     center: undefined,
   };
   return (
-    <Flex alignItems="center" bg="blue" py={12} minHeight="320px">
+    <Wrapper>
       <Container>
         <Flex
           justifyContent={justifyContent[layout] as CSS.Property.JustifyContent}
@@ -53,7 +68,7 @@ export const Banner: FC<BannerProps> = ({
           </Stack>
         </Flex>
       </Container>
-    </Flex>
+    </Wrapper>
   );
 };
 
