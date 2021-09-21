@@ -17,6 +17,7 @@ function App({ Component, pageProps, router }: AppProps) {
       </Head>
       <GlobalStyles />
       <AnimatePresence
+        initial={false}
         exitBeforeEnter
         onExitComplete={() => window.scrollTo(0, 0)}
       >
