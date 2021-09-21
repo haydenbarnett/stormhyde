@@ -53,6 +53,7 @@ export const ProductImage: FC<ProductImageProps> = ({ src }) => {
             height="700"
             alt=""
             layout="responsive"
+            priority={true}
             onLoad={(e) => {
               const target = e.target as HTMLImageElement;
               if (target.src.indexOf("data:image/gif;base64") < 0) {

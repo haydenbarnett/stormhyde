@@ -10,6 +10,7 @@ type CardProps = {
   description?: string;
   category?: string;
   thumbnail: string;
+  preload?: boolean;
 };
 
 const BaseCard = styled(Box, { shouldForwardProp })`
@@ -55,6 +56,7 @@ export const Card: FC<CardProps> = ({
   description,
   category,
   thumbnail,
+  preload,
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   return (
@@ -67,6 +69,7 @@ export const Card: FC<CardProps> = ({
               layout="fill"
               objectFit="cover"
               alt=""
+              priority={preload}
               onLoad={(e) => {
                 const target = e.target as HTMLImageElement;
                 if (target.src.indexOf("data:image/gif;base64") < 0) {

@@ -8,6 +8,7 @@ const data = {
       category: "Legacy Application",
       thumbnail:
         "/products/batch-script-generator/batch-script-generator-preview.png",
+      preload: true,
     },
     {
       url: "/map-converter/",
