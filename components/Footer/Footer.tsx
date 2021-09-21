@@ -15,32 +15,57 @@ export const Footer = () => (
     <Container>
       <Grid columns={12}>
         <GridItem colSpan={[12, 6, 8, 9]}>
-          <Stack gap={2}>
+          <Stack gap={0}>
             <Heading color="white" pb={4}>
               Products
             </Heading>
-            <Text size="xs">
-              <TextLink color="grey.400" href="/batch-script-generator/">
+            <Text size="sm">
+              <TextLink
+                color="grey.400"
+                href="/batch-script-generator/"
+                py={3}
+                display="inline-flex"
+              >
                 Batch Script Generator
               </TextLink>
             </Text>
-            <Text size="xs">
-              <TextLink color="grey.400" href="/map-converter/">
+            <Text size="sm">
+              <TextLink
+                color="grey.400"
+                href="/map-converter/"
+                py={2}
+                display="inline-flex"
+              >
                 Map Converter
               </TextLink>
             </Text>
-            <Text size="xs">
-              <TextLink color="grey.400" href="/image-renamer/">
+            <Text size="sm">
+              <TextLink
+                color="grey.400"
+                href="/image-renamer/"
+                py={2}
+                display="inline-flex"
+              >
                 Image Renamer
               </TextLink>
             </Text>
-            <Text size="xs">
-              <TextLink color="grey.400" href="/scrambler/">
+            <Text size="sm">
+              <TextLink
+                color="grey.400"
+                href="/scrambler/"
+                py={2}
+                display="inline-flex"
+              >
                 Scrambler
               </TextLink>
             </Text>
-            <Text size="xs">
-              <TextLink color="grey.400" href="/demon/">
+            <Text size="sm">
+              <TextLink
+                color="grey.400"
+                href="/demon/"
+                py={2}
+                display="inline-flex"
+              >
                 Demon
               </TextLink>
             </Text>

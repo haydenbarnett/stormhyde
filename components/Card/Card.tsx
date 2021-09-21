@@ -44,6 +44,8 @@ type FadeProps = {
 };
 
 const Fade = styled.div<FadeProps>`
+  position: absolute;
+  inset: 0;
   opacity: ${(props) => props.opacity};
   transition: 0.8s ease;
 `;
@@ -79,7 +81,7 @@ export const Card: FC<CardProps> = ({
           <Stack gap={4}>
             <Heading>{title}</Heading>
             <Text color="grey.500">{description}</Text>
-            <Text size="xs" opacity={0.5}>
+            <Text size="xs" opacity={0.7}>
               {category}
             </Text>
           </Stack>

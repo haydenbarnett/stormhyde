@@ -6,6 +6,7 @@ declare module "@emotion/react" {
     mediaQueries: { [key: string]: string };
     colors: {
       blue: string;
+      sky: string;
       white: string;
       black: string;
       grey: {
