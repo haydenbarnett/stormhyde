@@ -78,7 +78,7 @@ export const Footer = () => (
             </Box>
             <Text size="xs">
               A retired project by{" "}
-              <TextLink color="blue" href="https://haydenbarnett.com">
+              <TextLink color="sky" href="https://haydenbarnett.com">
                 Hayden Barnett
               </TextLink>
               .

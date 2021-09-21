@@ -35,7 +35,7 @@ const BaseTextLink = styled("a", { shouldForwardProp })<BaseTextLinkProps>(
 );
 
 export const TextLink = forwardRef<HTMLAnchorElement, TextLinkProps>(
-  ({ children, color = "sky", href, as = "a", ...props }, ref) => {
+  ({ children, color = "blue", href, as = "a", ...props }, ref) => {
     return (
       <NextLink href={href} passHref>
         <BaseTextLink ref={ref} as={as} color={color} {...props}>
