@@ -34,6 +34,14 @@ const BaseDownloadButton = styled(Box, { shouldForwardProp })<
       color: ${(props) => props.theme.colors.blue};
     }
   }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 4px ${(props) => props.theme.colors.blue};
+  }
 `;
 
 export const DownloadButton: FC<DownloadButtonProps> = ({

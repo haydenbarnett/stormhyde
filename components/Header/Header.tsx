@@ -12,6 +12,12 @@ const HeaderWrapper = styled.header`
 const LogoWrapper = styled.a`
   display: inline-flex;
   margin: 26px 0;
+  &:focus {
+    outline: none;
+  }
+  &:focus-visible {
+    outline: white dashed 1px;
+  }
 `;
 
 export const Header = () => (

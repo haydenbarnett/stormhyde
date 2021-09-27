@@ -37,6 +37,15 @@ const BaseCard = styled(Box, { shouldForwardProp })`
       color: ${(props) => props.theme.colors.blue};
     }
   }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 8px 10px 0 rgb(0, 0, 0, 0.1),
+      0 0 0 4px ${(props) => props.theme.colors.blue};
+  }
 `;
 
 type FadeProps = {

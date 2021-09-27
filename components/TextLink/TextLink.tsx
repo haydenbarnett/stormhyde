@@ -30,6 +30,12 @@ const BaseTextLink = styled("a", { shouldForwardProp })<BaseTextLinkProps>(
     "&:hover": {
       textDecoration: "underline",
     },
+    "&:focus": {
+      outline: "none",
+    },
+    "&:focus-visible": {
+      outline: "currentColor 1px dashed",
+    },
   },
   compose(space, display, color)
 );

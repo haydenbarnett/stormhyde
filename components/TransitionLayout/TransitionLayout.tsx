@@ -53,7 +53,6 @@ export const TransitionLayout = ({
       />
       <SlideOut
         key={`${route}-out`}
-        className="slide-out"
         initial={{ scaleX: 1 }}
         animate={{ scaleX: 0 }}
         exit={{ scaleX: 0 }}

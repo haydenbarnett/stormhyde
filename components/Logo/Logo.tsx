@@ -12,6 +12,8 @@ type FadeProps = {
 
 const Fade = styled.div<FadeProps>`
   opacity: ${(props) => props.opacity};
+  font-size: 0;
+  line-height: 0;
   transition: 0.8s ease;
 `;
 
