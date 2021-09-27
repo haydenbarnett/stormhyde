@@ -25,10 +25,28 @@ type TextLinkProps = BaseTextLinkProps & NextLinkProps;
 
 const BaseTextLink = styled("a", { shouldForwardProp })<BaseTextLinkProps>(
   {
+    position: "relative",
     cursor: "pointer",
     textDecoration: "none",
+    "&::before": {
+      content: `""`,
+      position: "absolute",
+      width: "100%",
+      height: "1px",
+      background: "currentColor",
+      top: "100%",
+      left: "0",
+      pointerEvents: "none",
+      transformOrigin: "100% 50%",
+      transform: "scale3d(0, 1, 1)",
+      transition: "transform 0.3s",
+    },
+    "&:hover::before": {
+      transformOrigin: "0% 50%",
+      transform: "scale3d(1, 1, 1)",
+    },
     "&:hover": {
-      textDecoration: "underline",
+      textDecoration: "none",
     },
     "&:focus": {
       outline: "none",
