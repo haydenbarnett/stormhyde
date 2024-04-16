@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: 'https://stormhyde.com',
+  siteUrl: 'https://www.stormhyde.com',
   generateRobotsTxt: true,
 }
