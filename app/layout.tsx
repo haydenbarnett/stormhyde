@@ -4,9 +4,10 @@ import type { Metadata } from 'next';
 import type { FC, ReactNode } from 'react';
 import { site } from '@/data/site';
 import clsx from 'clsx';
-import '../styles/globals.css';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { Analytics } from '@vercel/analytics/react';
+import '../styles/globals.css';
 
 type RootLayoutProps = {
   readonly children: ReactNode;
@@ -34,6 +35,7 @@ const RootLayout: FC<RootLayoutProps> = ({ children }) => (
       <Header />
       {children}
       <Footer />
+      <Analytics />
     </body>
   </html>
 );
