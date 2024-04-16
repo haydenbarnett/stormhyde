@@ -15,7 +15,7 @@ export const TextLink = forwardRef<HTMLAnchorElement, TextLinkProps>(
         ref={ref}
         href={href}
         className={clsx(
-          'underline text-blue-600 hover:text-sky-600 transition',
+          'underline text-blue-600 hover:text-sky-600 transition focus-visible:ring-4 ring-blue-600 outline-none',
           className
         )}
       >

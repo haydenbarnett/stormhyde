@@ -15,15 +15,15 @@ export const DownloadButton: FC<DownloadButtonProps> = ({
   <Link
     href={href}
     target="_blank"
-    className="group flex text-center flex-col mx-1 sm:mx-3 py-4 px-6 sm:px-10 bg-white hover:bg-sky-50 rounded-lg shadow-md hover:shadow-lg text-gray-600 transition hover:-translate-y-1"
+    className="flex flex-col px-6 py-4 mx-1 text-center text-gray-600 bg-white rounded-lg shadow-md outline-none transition group sm:mx-3 sm:px-10 hover:bg-sky-50 hover:shadow-lg hover:-translate-y-1 focus-visible:ring-4 ring-blue-600"
   >
     {label && (
-      <span className="text-md font-semibold group-hover:text-blue-600 transition">
+      <span className="font-semibold transition text-md group-hover:text-blue-600">
         {label}
       </span>
     )}
     {category && (
-      <span className="text-xs text-gray-500 group-hover:text-blue-600 transition">
+      <span className="text-xs text-gray-500 transition group-hover:text-blue-600">
         {category}
       </span>
     )}

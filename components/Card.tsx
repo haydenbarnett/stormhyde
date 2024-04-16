@@ -21,13 +21,13 @@ export const Card: FC<CardProps> = ({
   return (
     <Link
       href={url}
-      className="group block rounded-xl shadow-lg hover:shadow-xl mx-auto max-w-[345px] transition-all hover:-translate-y-1 will-change-transform overflow-hidden"
+      className="group block rounded-xl shadow-lg hover:shadow-xl mx-auto max-w-[345px] transition-all hover:-translate-y-1 will-change-transform overflow-hidden focus-visible:ring-4 ring-blue-600 outline-none"
     >
       <div className="relative h-[185px] w-full bg-gray-600">
         <Image src={thumbnail} className="object-cover" fill alt="" />
       </div>
-      <div className="flex flex-col gap-4 py-5 px-8">
-        <h2 className="font-medium text-lg group-hover:text-sky-600 transition">
+      <div className="flex flex-col px-8 py-5 gap-4">
+        <h2 className="text-lg font-medium transition group-hover:text-sky-600">
           {title}
         </h2>
         <Text className="text-gray-600">{description}</Text>

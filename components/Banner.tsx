@@ -24,7 +24,7 @@ export const Banner: FC<BannerProps> = ({
       )}
     >
       <Container>
-        <div className="flex justify-center items-start flex-col gap-3 md:w-1/2">
+        <div className="flex flex-col items-start justify-center gap-3 md:w-1/2">
           <div className="flex flex-col gap-3">
             {category && (
               <p className="text-sm text-white opacity-70">{category}</p>

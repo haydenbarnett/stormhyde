@@ -5,46 +5,46 @@ import { TextLink } from './TextLink';
 import { Text } from './Text';
 
 export const Footer: FC = () => (
-  <div className="bg-gray-800 text-gray-400 py-12">
+  <div className="py-12 text-gray-400 bg-gray-800">
     <Container>
       <div className="grid grid-cols-12">
         <div className="col-span-12 sm:col-span-6 md:col-span-8 lg:col-span-9">
           <div className="flex flex-col">
-            <p className="text-white mb-6">Products</p>
+            <p className="mb-6 text-white">Products</p>
             <TextLink
-              className="text-gray-400 my-2 inline-flex w-fit text-sm no-underline"
+              className="inline-flex my-2 text-sm text-gray-400 no-underline w-fit"
               href="/batch-script-generator/"
             >
               Batch Script Generator
             </TextLink>
             <TextLink
               href="/map-converter/"
-              className="text-gray-400 my-2 inline-flex w-fit text-sm no-underline"
+              className="inline-flex my-2 text-sm text-gray-400 no-underline w-fit"
             >
               Map Converter
             </TextLink>
             <TextLink
               href="/image-renamer/"
-              className="text-gray-400 my-2 inline-flex w-fit text-sm no-underline"
+              className="inline-flex my-2 text-sm text-gray-400 no-underline w-fit"
             >
               Image Renamer
             </TextLink>
             <TextLink
               href="/scrambler/"
-              className="text-gray-400 my-2 inline-flex w-fit text-sm no-underline"
+              className="inline-flex my-2 text-sm text-gray-400 no-underline w-fit"
             >
               Scrambler
             </TextLink>
             <TextLink
               href="/demon/"
-              className="text-gray-400 my-2 inline-flex w-fit text-sm no-underline"
+              className="inline-flex my-2 text-sm text-gray-400 no-underline w-fit"
             >
               Demon
             </TextLink>
           </div>
         </div>
         <div className="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3">
-          <div className="flex flex-col gap-4 mt-6 sm:mt-0">
+          <div className="flex flex-col mt-6 gap-4 sm:mt-0">
             <div className="mb-4">
               <Symbol variant="white" />
             </div>
